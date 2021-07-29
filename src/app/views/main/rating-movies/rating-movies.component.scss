@@ -1,26 +1,37 @@
 .movies {
-  padding-top: 100px;
-  &__block {
-    display: grid;
-    grid-template-columns: repeat(6, 1fr);
-    grid-gap: 15px;
-  }
+    padding-top: 100px;
+    &__block {
+        display: grid;
+        grid-template-columns: repeat(6, 1fr);
+        grid-gap: 15px;
+    }
 }
 
 .movie {
-  padding-top: 100%;
-  &__block {
-    padding: 5px;
-    background: linear-gradient(to top, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0));
-  }
-  &__title {
-    margin-bottom: 15px;
-  }
-
+    padding-top: 100%;
+    &__block {
+        padding: 5px;
+        background: linear-gradient(to top, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0));
+    }
+    &__title {
+        margin-bottom: 15px;
+    }
+    &__image {
+        position: relative;
+        padding: 0 0 90% 0;
+        img {
+            position: absolute;
+            width: 100px;
+            height: 100px;
+            left: 0;
+            top: 0;
+            object-fit: cover;
+        }
+    }
 }
 
 @media (max-width: 420px) {
-  .movie__title {
-    margin-bottom: 5px;
-  } 
- }
+    .movie__title {
+        margin-bottom: 5px;
+    }
+}
